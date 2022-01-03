@@ -1,0 +1,31 @@
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+##################################################
+# get all persons
+
+GET http://127.0.0.1:8080/api/v1/person
+
+##################################################
+# get specific person
+
+GET http://127.0.0.1:8080/api/v1/person/1
+
+##################################################
+# create person
+
+POST http://127.0.0.1:8080/api/v1/person
+Content-Type: application/json
+
+{
+    "firstName": "Freddy",
+    "lastName": "Krueger",
+    "streetAndHouseNumber": "Elm street 13",
+    "city": "Springwood",
+    "zipCode": "OH-12345",
+    "dateOfBirth": "01.01.1975"
+}
+
+##################################################
+# delete a person
+
+DELETE http://127.0.0.1:8080/api/v1/person/1
